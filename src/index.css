@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: gray;
+} */
+ /* CSS For Navbar */
+.nav-btn{
+    margin: 0px 12px;
+    width:9rem;
+    font-size: 1.3rem;
+    border-radius: 0px;
+    font-family: 'David Libre', serif;
+    
+}
+.nav-items{
+    
+    margin: 5px;
+    font-size: 1.3rem;
+
+}
+.menu{
+    border-bottom: 3px blue solid;
+}
+/* .nav-items:hover{
+    border-bottom: 3px solid blue;
+    position: relative;
+     top:.6px;
+} */
+.nav_text{
+    /* background-color: white; */
+    margin-right: 3rem;
+}
+.brands{
+    border-right: 2px grey solid;
+    /* padding:0px  8px; */
+    padding-right: 1.3rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+    font-family: 'David Libre', serif;
+}
+.nav-images{
+     height:50px;
+     width:65px;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+ /* CSS For Jumbotron part */
+ .jumbo-section{
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+     url('./images/jumbo_images.jpg');
+     background-repeat: no-repeat;
+     background-size: 100%,100%;
+     background-position: center center;
+     margin-bottom: 0px;
+     
+ }
+ .jumbo-title{
+     font-size: 1.6rem;
+ }
+ .jumbo-paragraph{
+    font-size: 1.3rem;
+ }
+ .jumbo-button{
+border-radius: 0px;
+font-size: 18px;
+box-shadow: 5px 5px 25px -5px black;
+}
+/* CSS for about us page */
+
+.boxs{
+   background-image: linear-gradient(white,rgb(214, 146, 57));
+    height:450px;
+    width:350px;                       
+  
+    margin:100px  ;
+     box-shadow: 5px 5px 15px -3px black;
+     float:left;
+    }
+    .prop{
+        clear: both;
+    }
+.abt_image{
+    height:125px;
+    width: 150px;
+    border-radius: 50%;
+   
+    position: relative;
+    left:28%;
+    top:-50px;
+    box-shadow: 0px -5px 10px -5px black;
+}
+/* CSS for contact page */
+.contact-body{
+    background-color: #f2f2f2;
+}
+.contact-contain{
+    display: block;
+    background-color:white;
+}
+.icon-position{
+    position: relative;
+    top:-32px;
+    left:14px;
+}
+.icon-position-message{
+    position: relative;
+    top:-240px;
+    left:14px;
+}
+.submit-btn{
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 50px !important;
+    transition: 0.8s;
+    color:#3498db;
+    border : 2px #3498db solid;
+}
+.submit-btn:hover{
+    background-color: #3498db;
+    color: white;
+}
+/* CSS for footer */
+.bg-black{
+    background-color:black 
+}
+.list-items{
+list-style: none;
+text-decoration: none;
+}
+
+.list-items a:hover{
+    text-decoration: none;
+}
+.icons{
+font-size:50px;
+margin:10px;
+/* background-color: grey; */
+padding: 5px;
+border-radius: 50%;
+}
+.line-break{
+    background-color: grey;
+
+}
