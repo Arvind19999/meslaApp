@@ -9,7 +9,7 @@ import {
   NavLink,
   NavbarText
 } from 'reactstrap';
-// import {BrowserRouter,NavLink } from 'react-router-dom';
+
 import web from '../src/images/mesla.png';
 
 const Header = (props) => {
@@ -30,19 +30,19 @@ const Header = (props) => {
           <Nav className="mr-auto" navbar>
          
             <NavItem className="nav-items mr-3">
-            <NavLink  href ="/home" activeClassName="menu" >Home</NavLink>
+            <NavLink  href ="/" className="menu" >Home</NavLink>
             </NavItem> 
 
      <NavItem className="nav-items mr-3">
-             <NavLink href="/about" activeClassName="menu">About Us</NavLink>
+             <NavLink href="/about" className="menu">About Us</NavLink>
             </NavItem>
 
            <NavItem className="nav-items mr-3">
-            <NavLink href ="/jobs" activeClassName="menu">Jobs</NavLink>
+            <NavLink href ="/jobs" className="menu">Jobs</NavLink>
             </NavItem>
             
              <NavItem className="nav-items mr-3">
-             <NavLink href ="/contact" activeClassName="menu">Contact us</NavLink>
+             <NavLink href ="/contact" className="menu">Contact us</NavLink>
             </NavItem>
             
           </Nav>
@@ -58,3 +58,4 @@ const Header = (props) => {
 }
 
 export default Header;
+

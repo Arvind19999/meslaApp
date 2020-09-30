@@ -5,7 +5,7 @@ import web from '../src/images/mesla.png';
 const Footer =()=>{
     return(
           <>
-          <div className="bg-black p-5">
+          <div className="footers bg-black p-5">
               <div className="row">
               <div className="col-md-4">
              <div className="pt-5 d-flex justify-content-between">
@@ -21,7 +21,7 @@ const Footer =()=>{
                   <ul>
                       <li className="list-items"> <NavLink  href="/about">Meet the Team</NavLink> </li>
                       <li className="list-items"> <NavLink  href="/">Home </NavLink> </li>
-                      <li className="list-items"> <NavLink  href="#">Contact Us </NavLink> </li>
+                      <li className="list-items"> <NavLink  href="/contact">Contact Us </NavLink> </li>
                       <li className="list-items"> <NavLink href="#">Help & suport</NavLink> </li>
                   </ul>
               </div>

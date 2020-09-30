@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -21,14 +22,10 @@
     font-size: 1.3rem;
 
 }
-.menu{
-    border-bottom: 3px blue solid;
+.menu:hover{
+    border-bottom: 3px rgb(7, 214, 241) solid;
 }
-/* .nav-items:hover{
-    border-bottom: 3px solid blue;
-    position: relative;
-     top:.6px;
-} */
+
 .nav_text{
     /* background-color: white; */
     margin-right: 3rem;
@@ -61,7 +58,7 @@
      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
      url('./images/jumbo_images.jpg');
      background-repeat: no-repeat;
-     background-size: 100%,100%;
+     background-size: center,center;
      background-position: center center;
      margin-bottom: 0px;
      
@@ -83,7 +80,6 @@ box-shadow: 5px 5px 25px -5px black;
    background-image: linear-gradient(white,rgb(214, 146, 57));
     height:450px;
     width:350px;                       
-  
     margin:100px  ;
      box-shadow: 5px 5px 15px -3px black;
      float:left;
@@ -104,10 +100,13 @@ box-shadow: 5px 5px 25px -5px black;
 /* CSS for contact page */
 .contact-body{
     background-color: #f2f2f2;
+   
 }
 .contact-contain{
     display: block;
     background-color:white;
+    /* box-shadow: 5px 5px 220px -5px rgb(7, 214, 241); */
+    box-shadow: -5px 5px 20px -10px black;
 }
 .icon-position{
     position: relative;
@@ -156,3 +155,179 @@ border-radius: 50%;
     background-color: grey;
 
 }
+
+
+
+/* Media query  */
+
+@media (min-width:768px) and (max-width:816px){
+    .navbar-expand-md {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+       padding:0px
+    }
+    .nav-items{
+      padding:0px !important;
+    margin: 4px 0px 2px 0px;
+      font-size: 1.3rem;
+    }
+    .menu{
+        padding:0px !important;
+        
+        margin:0px !important;
+    }
+    .nav_text{
+        padding:0px !important;
+        display: flex;
+        margin-right:6px ;
+    }
+    .nav-btn{
+    margin: 4px;
+    width:6.4rem;
+    font-size: 1.2rem;
+    }
+    .brands{
+        padding: 5px 1px 5px 0px;
+        margin-left: 18px;
+    }
+    /* for jumbotron sections */
+    .display-4{
+        font-size: 3rem !important;
+    }
+    .media-jumbo-title{
+        font-size: 1.3rem !important;
+    }
+    .media-jumbo-lead{
+        font-size: 16px !important;
+    }
+  
+   }
+   @media (min-width:817px) and (max-width:1050px){
+    .medias{
+        background-color: yellow;
+    }
+    .navbar-expand-md {
+        /* flex-flow: row nowrap;
+        justify-content: flex-start; */
+       padding:0px
+    }
+    .nav-items{
+      padding:0px !important;
+    margin: 4px 0px 2px 0px;
+      font-size: 1.3rem;
+    }
+    .menu{
+        padding:0px !important;
+        
+        margin:0px !important;
+    }
+    .nav_text{
+        padding:0px !important;
+        display: flex;
+        margin-right:20px ;
+    }
+    .nav-btn{
+    margin: 6px;
+    width:7rem;
+    font-size: 1.3rem;
+    }
+    .brands{
+        padding: 8px 3px 8px 0px;
+        margin-left: 25px;
+    }
+    /* for jumbotron sections */
+    .display-4{
+        font-size: 3.5rem !important;
+    }
+    .media-jumbo-title{
+        font-size: 1.5rem !important;
+    }
+    .media-jumbo-lead{
+        font-size: 19px !important;
+    }
+   }
+@media (min-width:860px){
+    .jumbo-section{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+        url('./images/jumbo_images.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%,100%;
+        background-position: center center;
+        margin-bottom: 0px;
+        
+    }
+}   
+@media (min-width:360px) and (max-width:767px){
+    .brands{
+        padding: 0px;   
+    }
+    .nav_text{
+        display: flex;
+    }
+    /* CSS for jumbotron */
+    .display-4{
+         font-size: 2rem;
+     }     
+     .media-jumbo-title{
+         font-size: 1.1rem;
+     }
+     .media-jumbo-lead{
+         font-size: 14px;
+     }
+     .jumbo-button{
+         font-size: 14px;
+         width:9rem;
+     }
+/* CSS for footer */
+.footers h3{
+    font-size: 1.7rem;
+}
+    .icons{
+        font-size: 30px;
+        margin: 7px;
+        padding: 3px;
+    }
+/* CSS for About us page */
+.boxs{
+    /* padding-top: 30px; */
+    float:none;
+    margin:100px auto;
+}
+.display-4{
+    margin-bottom: 30px;
+}
+}
+/* Espically for about us page */
+@media (min-width:768px) and (max-width:991px){
+  /* for bou us page */
+  .boxs{
+    float: left;
+    margin: 0px;
+    margin-top:100px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 325px;
+}
+}
+@media (min-width:996px) and (max-width:1200px){
+    /* for bou us page */
+    .boxs{
+      float: left;
+      margin: 70px;
+      margin-top: 120px;
+      width: 325px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
