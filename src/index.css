@@ -108,6 +108,13 @@ box-shadow: 5px 5px 25px -5px black;
     /* box-shadow: 5px 5px 220px -5px rgb(7, 214, 241); */
     box-shadow: -5px 5px 20px -10px black;
 }
+.contact-home{
+    color:black;
+    font-weight: bolder;
+}
+.slash_contact:hover{
+    cursor: text;
+}
 .icon-position{
     position: relative;
     top:-32px;

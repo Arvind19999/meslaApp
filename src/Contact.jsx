@@ -12,8 +12,8 @@ const Contact =()=>{
         <div className = "contact-body">
         <div className="container contact-contain p-5">
        <div>
-      <NavLink className="pb-4" href="/home"><span> <i className ="fa fa-home"></i>
-       </span>Home  <span className="text-muted">/Contact</span></NavLink>
+      <NavLink className="pb-4" href="/"><span className="contact-home"> <i className ="fa fa-home"></i>
+      Home</span>  <span className="text-muted slash_contact">/Contact</span></NavLink>
       <strong> <hr /> </strong> 
        </div>
       
