@@ -40,6 +40,8 @@
 }
 .navbar {
     position: relative;
+    /* position: fixed;
+    width:100%; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -53,6 +55,82 @@
      border-radius: 50%;
      margin-right: 10px;
 }
+/* CSS  for signup and sign in */
+.modal-content {
+    position: relative;
+     left:-200px;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 625px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    margin : 7rem 0px 3px 0px !important;
+}
+.modal-singup-bg{
+    background-color: rgb(0, 217, 255);
+    height: 592px;
+}
+.close {
+    font-size: 2rem;
+    position: relative;
+    top: -43px;
+    left: 1px;
+}
+.modal-header {
+    padding:0px !important;
+    border-bottom:0px !important;
+}
+.signup-img{
+    background-image: linear-gradient(rgba(7, 167, 241, 0.6),rgba(7, 167, 241, 0.6)),
+    url('../src/images/signupimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width:950px;
+   height:593px; 
+}
+.signup-form-container{
+   padding: 60px;
+}
+.btn-info{
+    background-color: black;
+    margin-top: 15rem;
+    width:100%;
+    font-size:1.1rem;
+}
+.signup-form-container .form-group{
+    margin-bottom: 0rem;
+}
+/* CSS for Login page */
+.modal-login-bg{
+    background-color: rgb(0, 217, 255);
+    height: 592px;
+}
+.login-img{
+    background-image: linear-gradient(rgba(7, 167, 241, 0.6),rgba(7, 167, 241, 0.6)),
+    url('../src/images/logininimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width:950px;
+   height:593px; 
+}
+.forgetPassword{
+    cursor: pointer;
+}
+.hide-display-btn{
+    display:none;
+}
+.hide-display-btn-signup{
+    display:none;
+}
+
+
  /* CSS For Jumbotron part */
  .jumbo-section{
      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
@@ -74,8 +152,9 @@ border-radius: 0px;
 font-size: 18px;
 box-shadow: 5px 5px 25px -5px black;
 }
-/* CSS for about us page */
 
+
+/* CSS for about us page */
 .boxs{
    background-image: linear-gradient(white,rgb(214, 146, 57));
     height:450px;
@@ -90,13 +169,14 @@ box-shadow: 5px 5px 25px -5px black;
 .abt_image{
     height:125px;
     width: 150px;
-    border-radius: 50%;
-   
+    border-radius: 50%;   
     position: relative;
     left:28%;
     top:-50px;
     box-shadow: 0px -5px 10px -5px black;
 }
+
+
 /* CSS for contact page */
 .contact-body{
     background-color: #f2f2f2;
@@ -139,6 +219,12 @@ box-shadow: 5px 5px 25px -5px black;
     background-color: #3498db;
     color: white;
 }
+/* CSS for jobs section  */
+.job-section-bg{
+   background-color:#f2f2f2;
+}
+
+
 /* CSS for footer */
 .bg-black{
     background-color:black 
@@ -303,6 +389,63 @@ border-radius: 50%;
 .display-4{
     margin-bottom: 30px;
 }
+/* CSS for login and sign up page */
+.modal-content {
+    position: relative;
+    left:-15px;
+    
+    width: 330px;
+    height: 520px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    margin : 8rem auto 3px auto !important;
+}
+.signup-img,.login-img{
+    display: none;  
+}
+.signup-form-container{
+   padding: 5px;
+}
+.signup-form-container label{
+    font-size: 14px;
+}
+.forgetPassword{
+float:left;
+}
+/* For hide and display buttons */
+.hide-display-btn{
+    display:block;
+    color:blue;
+    border:none;
+    margin-top: 15px;
+    position: relative;
+    left:45px;
+    background-color:rgba(14, 9, 9, 0.1);
+    
+}
+.hide-display-btn-signup{
+    display:block;
+    color:blue;
+    border:none;
+    margin-top: 15px;
+    position: relative;
+    left:105px;
+    background-color:rgba(14, 9, 9, 0.1);
+    margin-top: 155px;
+}
+.hide-display-btn-signup:hover{
+    background-color:rgba(14, 9, 9, 0.1) !important;
+    color:blue;
+}
+
+.hide-display-btn:hover{
+    background-color:rgba(14, 9, 9, 0.1) !important;
+    color:blue;
+}
 }
 /* Espically for about us page */
 @media (min-width:768px) and (max-width:991px){
@@ -314,6 +457,36 @@ border-radius: 50%;
     margin-bottom: 20px;
     margin-right: 20px;
     width: 325px;
+}
+/* CSS for login and sign up page */
+.modal-content {
+    position: relative;
+    right:auto;
+    width: 800px;
+    height: 625px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    margin : 8rem 0px 3px 0px !important;
+}
+.signup-img{
+    background-image: linear-gradient(rgba(7, 167, 241, 0.6),rgba(7, 167, 241, 0.6)),
+    url('../src/images/signupimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width:100%;
+   height:593px; 
+}
+.signup-form-container{
+   padding: 10px;
+   width: 100%;
+}
+.signup-form-container label{
+    font-size: 14px;
 }
 }
 @media (min-width:996px) and (max-width:1200px){

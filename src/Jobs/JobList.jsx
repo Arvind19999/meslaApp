@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import JobsData from './JobsData'
+import React, {useState} from 'react';
+import JobsData from './JobsData';
 import { Container  } from "react-bootstrap";
-import Job from './Job'
+import Job from './Job';
 
 import JobPagination from './JobPagination';
 import SearchForm from './SearchForm';
@@ -12,6 +12,7 @@ export default function JobList() {
     const {jobs, loading , error, hasNextPage} = JobsData(params, page);
     return (
       <>
+      <div className="job-section-bg">
         <Container className="my-2">
           <h2 className="mb-3">GitHub Jobs</h2>
           <SearchForm setParams={setParams} params={params} setPage={setPage}/> 
@@ -24,6 +25,6 @@ export default function JobList() {
           <JobPagination page={page} setPage={setPage} hasNextPage={hasNextPage}/>
 
         </Container>
-      </>
+        </div> </>
     );
 }

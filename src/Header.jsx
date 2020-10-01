@@ -9,8 +9,9 @@ import {
   NavLink,
   NavbarText
 } from 'reactstrap';
-
 import web from '../src/images/mesla.png';
+import Login from './Login';
+import Signup from './Signup'
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,9 +48,19 @@ const Header = (props) => {
             
           </Nav>
           
-          <NavbarText className="nav_text">
-              <button name="login" className="nav-btn btn btn-primary">Login</button>
-              <button className="nav-btn btn btn-secondary">Sign up</button>
+          <NavbarText className="nav_text d-flex">
+              {/* <button name="login" className="nav-btn btn btn-primary">Login</button> */}
+            
+               <Signup name = "signup-name"
+               label = "Sign up"
+               classNames = "nav-btn btn btn-secondary"
+              />
+                  <Login name = "Login-name"
+               label = "Login"
+               classNames = "nav-btn btn btn-success"
+              />
+
+              {/* <button className="nav-btn btn btn-secondary">Sign up</button>      */}
           </NavbarText>
         </Collapse>
       </Navbar>

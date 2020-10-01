@@ -6,9 +6,10 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
+import Login from './Login';
+import JobList from '../src/Jobs/JobList';
 
 import {BrowserRouter,Switch,Route } from 'react-router-dom';
-import JobList from './Jobs/JobList';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <Route exact path="/contact" component ={Contact} />
       <Route exact path="/jobs" component ={JobList} />
       </Switch> 
-      </BrowserRouter>  
+      </BrowserRouter>
+      <Login />  
     <Footer />
   </>
   );
