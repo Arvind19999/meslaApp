@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 import {BrowserRouter,Switch,Route } from 'react-router-dom';
+import JobList from './Jobs/JobList';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/contact" component ={Contact} />
+      <Route exact path="/jobs" component ={JobList} />
       </Switch> 
       </BrowserRouter>  
     <Footer />
